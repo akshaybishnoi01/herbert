@@ -1,21 +1,41 @@
-import React from 'react'
 import Icons from '../common/Icons'
 import { CARD_DATA } from '../common/Helper'
 import PrimaryHeading from '../common/PrimaryHeading'
 import PrimaryParagraph from '../common/PrimaryParagraph'
 import PrimaryButton from '../common/PrimaryButton'
+import { gsap } from 'gsap';
+import { useLayoutEffect } from 'react';
 
 const VisaCode = () => {
+    useLayoutEffect(() => {
+        const aot = gsap.context(() => {
+          gsap.from(".box", {
+            y:"100%",
+            opacity: 0,
+            duration: 0.5,
+            stagger: 0.3,
+            scrollTrigger: {
+                trigger: ".visa",
+                start: "top 50%",
+                end: "bottom top",
+                toggleActions: "play none none none",
+                once: true,
+            },
+        });
+    });
+
+    return () => aot.revert();
+}, []);
     return (
         <div className='bg-offOrange'>
             <div className='max-w-[1920px] mx-auto'>
-                <div className='container md:py-[100px] sm:py-20 py-16'>
+                <div className='container md:py-[100px] sm:py-20 py-16 visa'>
                     <div id='Plans' className='flex xl:gap-[135px] md:gap-20 gap-14 lg:flex-row flex-col items-center'>
                         <div className='flex sm:gap-9 gap-6 max-sm:justify-center items-center max-w-[532px] w-full'>
                             {CARD_DATA.map((value) => (
                                 <div key={value.id} className='sm:max-w-[248px] max-w-[152px] w-full flex flex-col sm:gap-9 gap-6'>
                                     {value.item.map((value, index) => (
-                                        <div key={index} className='sm:max-w-[248px] max-w-[152px] bg-white rounded-xl flex flex-col justify-center items-center sm:py-[27px] py-[18px] sm:px-[25px] px-[17px]' >
+                                        <div key={index} className='sm:max-w-[248px] max-w-[152px] bg-white box rounded-xl flex flex-col justify-center items-center sm:py-[27px] py-[18px] sm:px-[25px] px-[17px]' >
                                             <Icons className="max-sm:w-[49px] max-sm:h-[49px]" IconName={value.icon} />
                                             <p className='max-w-[197px] sm:text-xl text-base sm:leading-6 leading-5 text-center text-black font-medium mt-[14px]'>
                                                 {value.text}

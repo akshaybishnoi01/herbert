@@ -8,10 +8,12 @@ import ResidenceAct from './components/ResidenceAct';
 import VisaHandbook from './components/VisaHandbook';
 import NeedHelp from './components/NeedHelp';
 import Footer from './components/Footer';
+import PreLoader from './common/PreLoader';
+import ScrollToTop from './common/ScrollToTop';
 
 const App = () => {
   return (
-    <div className='min-h-screen relative overflow-hidden'>
+    <div className='min-h-screen relative overflow-hidden font-lato'>
       <Hero/>
       <ResidenceAct/>
       <SchengenBorders/>
@@ -20,6 +22,8 @@ const App = () => {
       <VisaHandbook/>
       <NeedHelp/>
       <Footer/>
+      <PreLoader/>
+      <ScrollToTop/>
      </div>
   )
 }
