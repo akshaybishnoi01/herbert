@@ -26,7 +26,7 @@ export const FOOTER_DATA = [
         ]
     },
     {
-        heading: "Resources", items: [
+        heading: "Support", items: [
             { text: "Help Center", link: "/" },
             { text: "Term & Conditions", link: "/" },
             { text: "Privacy Policy", link: "/" },

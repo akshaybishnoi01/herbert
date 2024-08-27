@@ -31,7 +31,7 @@ const VisaCode = () => {
         <div className='bg-offOrange'>
             <div className='max-w-[1920px] mx-auto relative'>
                 <div className='container md:py-[100px] sm:py-20 py-16 visa'>
-                    <div id='Plans' className='flex xl:gap-[135px] md:gap-20 gap-14 lg:flex-row flex-col items-center'>
+                    <div id='Plans' className='flex xl:gap-[135px] md:gap-20 gap-14 lg:flex-row flex-col justify-start lg:items-center'>
                         <div className='flex sm:gap-9 gap-6 max-sm:justify-center items-center max-w-[532px] w-full'>
                             {CARD_DATA.map((value) => (
                                 <div key={value.id} className='sm:max-w-[248px] max-w-[152px] w-full flex flex-col sm:gap-9 gap-6'>

@@ -30,7 +30,7 @@ const Hero = () => {
           <p className='para-hero translate-y-14 opacity-0 max-w-[685px] text-center sm:mt-4 mt-[14px] md:mb-10 mb-8 font-normal sm:text-base text-sm sm:leading-6 leading-[21px] text-gray'>
             Herbert, our AI chatbot, is built on a comprehensive understanding of German immigration law. To ensure accuracy and reliability, Herbert's knowledge base is derived from the following authoritative sources:
           </p>
-          <PrimaryButton className="text-white border border-orange bg-orange hover:bg-white hover:text-orange sm:max-w-[136px] max-w-[126px] w-full" text="Contact Us" />
+          <PrimaryButton className="text-white border border-orange bg-orange hover:bg-white hover:text-orange sm:max-w-[136px] max-w-[118px] w-full" text="Contact Us" />
         </div>
       </div>
       <div className='bg-hero bg-no-repeat bg-cover absolute top-0 left-1/2 -translate-x-1/2 w-full h-[773px] bg-center -z-10'></div>

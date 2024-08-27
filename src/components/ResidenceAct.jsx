@@ -44,14 +44,14 @@ const ResidenceAct = () => {
   return (
     <div className='max-w-[1920px] mx-auto relative'>
       <div id='Sources' className='container lg:pb-[120px] md:pb-24 pb-20 residence'>
-        <div id='Features' className='max-w-[1024px] w-full flex lg:justify-start justify-center items-center gap-[153px]'>
+        <div id='Features' className='max-w-[1024px] w-full flex justify-start items-center xl:gap-[153px] gap-24'>
           <div className='max-w-[478px] w-full '>
             <PrimaryHeading text="Residence " redText="Act" />
             <PrimaryParagraph className="max-w-[478px] sm:mt-4 mt-[14px]" text="The Aufenthaltsgesetz is the cornerstone of German immigration law. This act governs:" />
             <div className='flex justify-center'>
               <img className='md:max-w-[392px] max-w-[261px] lg:hidden w-full my-8 pointer-events-none' src={menResidence} alt="Men Residence" />
             </div>
-            <ul className='list-disc py-2 ps-5'>
+            <ul className='list-disc py-2 ps-6'>
               <li className='act-text font-normal sm:text-base text-sm sm:leading-6 leading-[21px] text-gray'>Entry into Germany</li>
               <li className='act-text font-normal sm:text-base text-sm sm:leading-6 leading-[21px] max-sm:py-2 text-gray'>Residence permits</li>
               <li className='act-text font-normal sm:text-base text-sm sm:leading-6 leading-[21px] text-gray'>Employment regulations for foreigners</li>
