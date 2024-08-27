@@ -53,9 +53,9 @@ const ResidenceAct = () => {
             </div>
             <ul className='list-disc py-2 ps-5'>
               <li className='act-text font-normal sm:text-base text-sm sm:leading-6 leading-[21px] text-gray'>Entry into Germany</li>
-              <li className='act-text font-normal sm:text-base text-sm sm:leading-6 leading-[21px] text-gray'>Residence permits</li>
+              <li className='act-text font-normal sm:text-base text-sm sm:leading-6 leading-[21px] max-sm:py-2 text-gray'>Residence permits</li>
               <li className='act-text font-normal sm:text-base text-sm sm:leading-6 leading-[21px] text-gray'>Employment regulations for foreigners</li>
-              <li className='act-text font-normal sm:text-base text-sm sm:leading-6 leading-[21px] text-gray'>Integration measures</li>
+              <li className='act-text font-normal sm:text-base text-sm sm:leading-6 leading-[21px] max-sm:pt-2 text-gray'>Integration measures</li>
             </ul>
             <PrimaryParagraph className="max-w-[478px]" text="Herbert utilizes this act to provide precise information on legal residence requirements and pathways to living in Germany." />
           </div>

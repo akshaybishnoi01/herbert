@@ -59,7 +59,7 @@ handbook'>
                         <PrimaryParagraph className="max-w-[478px] sm:mt-4 mt-[14px]" text="The Visumhandbuch is a comprehensive internal document used by the Federal Foreign Office and German embassies. Spanning approximately 1,000 pages, it provides detailed guidelines on visa issuance. Herbert's training on this resource offers:" />
                         <ul className='list-disc py-2 ps-5'>
                             <li className='handbook-text font-normal sm:text-base text-sm sm:leading-6 leading-[21px] text-gray'>In-depth insights into visa application assessment</li>
-                            <li className='handbook-text font-normal sm:text-base text-sm sm:leading-6 leading-[21px] text-gray'>Clarification on complex cases and exceptions</li>
+                            <li className='handbook-text font-normal sm:text-base text-sm sm:leading-6 leading-[21px] max-sm:py-2 text-gray'>Clarification on complex cases and exceptions</li>
                             <li className='handbook-text font-normal sm:text-base text-sm sm:leading-6 leading-[21px] text-gray'>Nuanced interpretations of immigration laws and regulations</li>
                         </ul>
                     </div>
