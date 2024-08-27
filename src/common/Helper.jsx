@@ -1,7 +1,7 @@
 export const NAV_ITEMS_DATA = [
-    { text: "Herbert", url: "#Herbert"},
-    { text: "Sources", url: "#Sources"},
-    { text: "Our Vision", url: "#Vision"},
+    { text: "Herbert", path: "/landing" },
+    { text: "Sources", path: "/" },
+    { text: "Our Vision", path: "/vision" },
 ];
 export const CARD_DATA = [
     {
@@ -14,7 +14,7 @@ export const CARD_DATA = [
             { icon: "documentationIcon", text: "Required documentation" },
             { icon: "timesIcon", text: "Visa fees and processing times" },
         ]
-    }
+    },
 ];
 export const FOOTER_DATA = [
     {

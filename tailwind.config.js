@@ -30,15 +30,11 @@ module.exports = {
         gray: "#5F5F5F",
         orange:"#FF9748",
         offOrange:"#FFF8F2",
-        offOrange:"#FFF8F2",
         offGray:"#00000029",
       },
       backgroundImage: {
         'hero': "url(./assets/image/webp/hero-bg.webp)",
         'handbookBg':"url(./assets/image//webp/handbook-bg.webp)",
-      },
-      boxShadow: {
-        '3xl': "0px 0px 5px",
       },
       backgroundSize: {
         full: '100% 100%',

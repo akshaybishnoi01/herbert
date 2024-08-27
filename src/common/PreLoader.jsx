@@ -19,7 +19,7 @@ const PreLoader = () => {
     return (
         <div className='min-h-screen w-full bg-white z-[100] fixed top-0 left-0 grid place-items-center'>
             <div className='animate-pulse flex gap-5 sm:gap-8 justify-center items-center'>
-                <img src={preloaderLogo} alt="logo" className='w-[260px] sm:w-[380px] relative z-10' />
+                <img src={preloaderLogo} alt="logo" className='w-[260px] sm:w-[380px] relative z-10 pointer-events-none' />
                 <div className="flex-col gap-4 w-full flex items-center justify-center">
                     <div
                         className="sm:w-24 w-18 h-18 sm:h-24 border-4 border-transparent text-orange text-2xl animate-spin flex items-center justify-center border-t-blue-600 rounded-full"

@@ -3,25 +3,26 @@ import PrimaryParagraph from '../common/PrimaryParagraph'
 import Icons from '../common/Icons'
 import employmentImage from '../assets/image/webp/employment-image.webp'
 import employmentVector from '../assets/image/webp/employment-vector.webp'
+import employmentEllipse from '../assets/image/webp/employment-ellipse.webp'
 import { gsap } from 'gsap';
 import { useLayoutEffect } from 'react';
 
 const EmploymentRegulation = () => {
     useLayoutEffect(() => {
         const aot = gsap.context(() => {
-          gsap.from(".number", {
-            x: -50,
-            opacity: 0,
-            duration: 0.5,
-            stagger: 0.4,
-            scrollTrigger: {
-                trigger: ".employment",
-                start: "top 50%",
-                end: "bottom top",
-                toggleActions: "play none none none",
-                once: true,
-            },
-        });
+            gsap.from(".number", {
+                x: -50,
+                opacity: 0,
+                duration: 0.5,
+                stagger: 0.4,
+                scrollTrigger: {
+                    trigger: ".employment",
+                    start: "top 50%",
+                    end: "bottom top",
+                    toggleActions: "play none none none",
+                    once: true,
+                },
+            });
             gsap.from(".employment-img", {
                 scale: "0",
                 opacity: 0,
@@ -36,18 +37,18 @@ const EmploymentRegulation = () => {
                 },
             });
         });
-    
         return () => aot.revert();
     }, []);
+
     return (
         <div className='relative overflow-hidden max-w-[1920px] mx-auto'>
-            <div id='Services' className='container ld:py-[120px] md:py-24 py-20 employment'>
+            <div id='Services' className='container lg:py-[120px] md:py-24 py-20 employment'>
                 <div className='flex flex-col justify-center items-center'>
                     <PrimaryHeading className="text-center" text="Employment " redText="Regulation" />
                     <PrimaryParagraph className="max-w-[716px] text-center pt-4" text="This regulation details the conditions under which foreign nationals can work in Germany. Herbert's training in the Beschäftigungsverordnung allows for accurate guidance on:" />
                 </div>
                 <div className='flex lg:hidden justify-center pt-6 pb-[44px]'>
-                <img className='md:max-w-[260px] max-w-[286px] lg:hidden w-full' src={employmentImage} alt="#" />
+                    <img className='md:max-w-[260px] max-w-[286px] lg:hidden w-full pointer-events-none' src={employmentImage} alt="#" />
                 </div>
                 <div className='max-w-[1055px] w-full lg:pt-14 lg:gap-[73px] md:gap-10 sm:gap-8 gap-6 flex lg:flex-row flex-col lg:items-center max-lg:justify-center'>
                     <div className='lg:max-w-[325px] w-full flex flex-row lg:flex-col lg:gap-0 md:gap-9 gap-6'>
@@ -58,13 +59,13 @@ const EmploymentRegulation = () => {
                             </p>
                         </div>
                         <div className='flex flex-col lg:pt-14 lg:items-end max-lg:w-6/12 number'>
-                            <Icons className="max-sm:w-[31px] max-sm:h-[31px]" IconName="numberTwo" />
+                            <Icons className="max-sm:w-[31px] max-sm:h-[31px]" IconName="numberTwo"/>
                             <p className='sm:text-xl text-base sm:leading-6 leading-5 font-medium text-black pt-4'>
                                 Job-seeking visas
                             </p>
                         </div>
                     </div>
-                    <img className='max-w-[260px] lg:flex hidden w-full employment-img' src={employmentImage} alt="#" />
+                    <img className='max-w-[260px] lg:flex hidden w-full employment-img pointer-events-none' src={employmentImage} alt="#"/>
                     <div className='lg:max-w-[325px] max-w-[650px] w-full flex lg:flex-col flex-row lg:gap-0 md:gap-24 gap-6'>
                         <div className='flex flex-col lg:items-start max-lg:w-6/12 number'>
                             <Icons className="max-sm:w-[31px] max-sm:h-[31px]" IconName="numberThree" />
@@ -81,7 +82,8 @@ const EmploymentRegulation = () => {
                     </div>
                 </div>
             </div>
-            <img className='absolute bottom-[-17%]' src={employmentVector} alt="#" />
+            <img className='absolute xl:bottom-[-16%] lg:bottom-[-12%] md:bottom-[-8%] sm:bottom-[-4%] bottom-[0%] max-sm:h-[142px]' src={employmentVector} alt="#" />
+            <img className='absolute sm:left-[-1%] left-[-4%] md:bottom-[16%] bottom-[70%] md:max-w-[165.17px] max-w-[97px] md:h-[356.04px] h-[210px]' src={employmentEllipse} alt="#" />
         </div>
     )
 }

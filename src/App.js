@@ -1,29 +1,20 @@
 import React from 'react'
-import Hero from './components/Hero';
 import './App.css'
-import SchengenBorders from './components/SchengenBorders';
-import EmploymentRegulation from './components/EmploymentRegulation';
-import VisaCode from './components/VisaCode';
-import ResidenceAct from './components/ResidenceAct';
-import VisaHandbook from './components/VisaHandbook';
-import NeedHelp from './components/NeedHelp';
-import Footer from './components/Footer';
-import PreLoader from './common/PreLoader';
-import ScrollToTop from './common/ScrollToTop';
+import Sources from './view/Sources'
+import Landing from './view/Landing'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Vision from './view/Vision';
 
 const App = () => {
   return (
     <div className='min-h-screen relative overflow-hidden font-lato'>
-      <Hero/>
-      <ResidenceAct/>
-      <SchengenBorders/>
-      <EmploymentRegulation/>
-      <VisaCode/>
-      <VisaHandbook/>
-      <NeedHelp/>
-      <Footer/>
-      <PreLoader/>
-      <ScrollToTop/>
+       <Router>
+      <Routes>
+        <Route path="/" element={<Sources/>} />
+        <Route path="/landing" element={<Landing/>} />
+        <Route path="/vision" element={<Vision/>} />
+      </Routes>
+    </Router>
      </div>
   )
 }
