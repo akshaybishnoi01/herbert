@@ -1,22 +1,26 @@
-import React from 'react'
-import './App.css'
-import Sources from './view/Sources'
-import Landing from './view/Landing'
+import React, { Suspense, lazy } from 'react';
+import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Vision from './view/Vision';
+
+// Dynamically import the components
+const Sources = lazy(() => import('./view/Sources'));
+const Landing = lazy(() => import('./view/Landing'));
+const Vision = lazy(() => import('./view/Vision'));
 
 const App = () => {
   return (
     <div className='min-h-screen relative overflow-hidden font-lato'>
-       <Router>
-      <Routes>
-        <Route path="/" element={<Sources/>} />
-        <Route path="/landing" element={<Landing/>} />
-        <Route path="/vision" element={<Vision/>} />
-      </Routes>
-    </Router>
-     </div>
-  )
+      <Router>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Sources />} />
+            <Route path="/landing" element={<Landing />} />
+            <Route path="/vision" element={<Vision />} />
+          </Routes>
+        </Suspense>
+      </Router>
+    </div>
+  );
 }
 
-export default App
+export default App;
