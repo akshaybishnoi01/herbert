@@ -59,7 +59,7 @@ const Footer = () => {
                            <a href="/"> <img className='md:max-w-[326px] max-w-[210px] w-full footer-logo pointer-events-none' src={footerLogo} alt="#" /></a>
                             <PrimaryParagraph className="max-w-[412px] w-full mt-[15px]" text="Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae velit mi sed mattis tempor tristique. Purus sed phasellus metus lectus auctor." />
                         </div>
-                        <div className='lg:max-w-[518px] max-sm:flex-wrap flex lg::gap-[86px] justify-between'>
+                        <div className='lg:max-w-[518px] max-sm:flex-wrap flex lg:gap-[86px] justify-between'>
                             {FOOTER_DATA.map((item, idx) => (
                                 <div key={idx} className='max-sm:flex max-sm:flex-col max-sm:w-[50%]'>
                                     <p className='font-semibold text-base leading-[19px] text-black opacity-90'>
