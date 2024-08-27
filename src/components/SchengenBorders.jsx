@@ -34,9 +34,9 @@ const SchengenBorders = () => {
                         <PrimaryHeading className="max-w-[473px]" text="Schengen Borders " redText="Code" />
                         <PrimaryParagraph className="max-w-[470px] mt-[14px]" text="As part of the Schengen Area, Germany adheres to this code for border control. Herbert's knowledge of the Schengener Grenzkodex covers:" />
                         <ul className='list-disc pt-2 ps-5'>
-                            <li className='li-text font-normal text-base leading-6 text-gray'>Short-term stay regulations</li>
-                            <li className='li-text font-normal text-base leading-6 text-gray'>Entry requirements for the Schengen Area</li>
-                            <li className='li-text font-normal text-base leading-6 text-gray'>Border crossing procedures</li>
+                            <li className='li-text font-normal sm:text-base text-sm sm:leading-6 leading-[21px] text-gray'>Short-term stay regulations</li>
+                            <li className='li-text font-normal sm:text-base text-sm sm:leading-6 leading-[21px] text-gray'>Entry requirements for the Schengen Area</li>
+                            <li className='li-text font-normal sm:text-base text-sm sm:leading-6 leading-[21px] text-gray'>Border crossing procedures</li>
                         </ul>
                     </div>
                 </div>

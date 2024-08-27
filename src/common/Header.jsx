@@ -12,7 +12,7 @@ const Header = () => {
         var tl = gsap.timeline();
         tl.to(".nav-gsap", {
             y: '0',
-            delay: '2.4',
+            delay: '2',
             opacity: "1",
             stagger: 0.2,
         });

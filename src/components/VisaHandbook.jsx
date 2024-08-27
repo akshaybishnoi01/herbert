@@ -58,15 +58,15 @@ handbook'>
                         <PrimaryHeading text="Visa " redText="Handbook" />
                         <PrimaryParagraph className="max-w-[478px] sm:mt-4 mt-[14px]" text="The Visumhandbuch is a comprehensive internal document used by the Federal Foreign Office and German embassies. Spanning approximately 1,000 pages, it provides detailed guidelines on visa issuance. Herbert's training on this resource offers:" />
                         <ul className='list-disc py-2 ps-5'>
-                            <li className='handbook-text font-normal text-base leading-6 text-gray'>In-depth insights into visa application assessment</li>
-                            <li className='handbook-text font-normal text-base leading-6 text-gray'>Clarification on complex cases and exceptions</li>
-                            <li className='handbook-text font-normal text-base leading-6 text-gray'>Nuanced interpretations of immigration laws and regulations</li>
+                            <li className='handbook-text font-normal sm:text-base text-sm sm:leading-6 leading-[21px] text-gray'>In-depth insights into visa application assessment</li>
+                            <li className='handbook-text font-normal sm:text-base text-sm sm:leading-6 leading-[21px] text-gray'>Clarification on complex cases and exceptions</li>
+                            <li className='handbook-text font-normal sm:text-base text-sm sm:leading-6 leading-[21px] text-gray'>Nuanced interpretations of immigration laws and regulations</li>
                         </ul>
                     </div>
-                    <img className='max-w-[392px] w-full handbook-img pointer-events-none' src={menResidence} alt="#" />
+                    <img className='md:max-w-[392px] max-w-[261px] w-full handbook-img pointer-events-none' src={menResidence} alt="#" />
                 </div>
                 <div className='border rounded-lg border-offGray max-w-[1440px] w-full bg-white'>
-                    <p className='font-normal text-base text-gray leading-6 p-6 max-w-[1140px] para-text'>
+                    <p className='font-normal text-base text-gray leading-6 sm:p-6 p-3 max-w-[1140px] para-text'>
                         By basing its knowledge on these official sources, Herbert provides you with accurate, up-to-date, & reliable information on German immigration processes. Our commitment to using these authoritative resources ensures that you receive guidance aligned with current German immigration laws & practices.
                     </p>
                 </div>
