@@ -47,7 +47,7 @@ const VisaCode = () => {
                             ))}
                         </div>
                         <div className='max-w-[473px] w-full'>
-                            <PrimaryHeading text="Visa" redText="Code" />
+                            <PrimaryHeading text="Visa " redText="Code" />
                             <PrimaryParagraph className="max-w-[473px] sm:mt-4 mt-[14px]" text="This code standardizes procedures for short-stay visas in the Schengen Area. Herbert's understanding of the Visa-Kodex ensures accurate information on:" />
                             <PrimaryButton className="text-white border border-orange bg-orange hover:bg-white hover:text-orange max-w-[136px] w-full md:mt-11 mt-8" text="Learn More" />
                         </div>
