@@ -6,8 +6,6 @@ const Vision = () => {
   return (
     <div>
       <Header/>
-      <PreLoader/>
-      Sources
     </div>
   )
 }

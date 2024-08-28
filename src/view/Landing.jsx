@@ -6,8 +6,6 @@ const Landing = () => {
   return (
     <div>
         <Header/>
-        <PreLoader/>
-      Landing
     </div>
   )
 }
